@@ -1,0 +1,45 @@
+{
+    "name": "PWA Alt Component",
+    "description": "Image, text overlay that links user to a category using the markup editor",
+    "group": "pwa_components",
+    "attribute_definition_groups": [
+        {
+            "id": "pwaComponent",
+            "name": "Banner Image",
+            "description": "The visual display of the banner image in the background.",
+            "attribute_definitions": [
+                {
+                    "id": "image",
+                    "name": "Image",
+                    "type": "image",
+                    "required": true
+                },
+                {
+                    "id": "heading",
+                    "name": "Heading",
+                    "type": "markup",
+                    "required": true
+                },
+                {
+                    "id": "subHeading",
+                    "name": "Sub Heading",
+                    "type": "string",
+                    "required": false
+                },
+                {
+                    "id": "ctaLink",
+                    "name": "CTA Link",
+                    "type": "url",
+                    "required": false
+                },
+                {
+                    "id": "ctaText",
+                    "name": "CTA Text",
+                    "type": "string",
+                    "required": false
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}

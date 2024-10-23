@@ -1,0 +1,15 @@
+{
+    "name": "PWA Alt Page",
+    "description": "A PWA Alt Page Type",
+    "region_definitions": [
+        {
+            "id": "main",
+            "name": "Main Region",
+            "component_type_exclusions": [
+                {
+                    "type_id": "commerce_assets.campaignBanner"
+                }
+            ]
+        }
+    ]
+}

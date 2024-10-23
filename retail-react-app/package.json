@@ -11,7 +11,7 @@
     "overridesDir": "overrides"
   },
   "devDependencies": {
-    "@salesforce/retail-react-app": "4.0.2"
+    "@salesforce/retail-react-app": "^4.0.2"
   },
   "scripts": {
     "lint": "pwa-kit-dev lint \"**/*.{js,jsx}\"",

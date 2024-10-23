@@ -11,7 +11,7 @@ const FooterLinks = ({ assetId, locale = "default" }) => {
         'queryFn': async () => {
             try {
                 const accessToken = await getTokenWhenReady();
-                const res = await fetch(`http://localhost:3000/mobify/proxy/ocapi/s/RefArchGlobal/dw/shop/v22_8/content/${assetId}`, {
+                const res = await fetch(`http://localhost:3000/mobify/proxy/ocapi/s/RefArchGlobal/dw/shop/v22_8/content/${assetId}?locale=${locale}`, {
                     'method': 'GET',
                     'headers': {
                         'Content-Type': 'application/json',
@@ -27,9 +27,7 @@ const FooterLinks = ({ assetId, locale = "default" }) => {
                 return jsonData;
             } catch (error) {
                 setError(error.message);
-                throw error;
             }
-
         }
     });
     if (error) {

@@ -19,6 +19,11 @@ module.exports = [
                     id: 'en-GB',
                     // alias: 'gb',
                     preferredCurrency: 'GBP'
+                },
+                {
+                    id: 'it-IT',
+                    // alias: 'gb',
+                    preferredCurrency: 'EUR'
                 }
             ]
         }

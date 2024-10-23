@@ -11,11 +11,11 @@ module.exports = {
         // Customize how your 'site' and 'locale' are displayed in the url.
         url: {
             // Determine where the siteRef is located. Valid values include 'path|query_param|none'. Defaults to: 'none'
-            // site: 'none',
+            site: 'path',
             // Determine where the localeRef is located. Valid values include 'path|query_param|none'. Defaults to: 'none'
-            locale: 'none'
+            locale: 'path',
             // This boolean value dictates whether or not default site or locale values are shown in the url. Defaults to: false
-            // showDefaults: true
+            showDefaults: true
         },
         // The default site for your app. This value will be used when a siteRef could not be determined from the url
         defaultSite: 'RefArchGlobal',

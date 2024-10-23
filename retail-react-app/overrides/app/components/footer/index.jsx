@@ -77,7 +77,7 @@ const Footer = ({ ...otherProps }) => {
                 <StylesProvider value={styles}>
                     <HideOnMobile>
                         <SimpleGrid columns={4} spacing={3}>
-                            <FooterLinks assetId="footer-links" locale="default" />
+                            <FooterLinks assetId="footer-links" />
                             <LinksList
                                 heading={intl.formatMessage({
                                     id: 'footer.column.account',
