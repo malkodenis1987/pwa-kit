@@ -32,6 +32,7 @@ import useMultiSite from '@salesforce/retail-react-app/app/hooks/use-multi-site'
 import styled from '@emotion/styled'
 import { STORE_LOCATOR_IS_ENABLED } from '@salesforce/retail-react-app/app/constants'
 import FooterLinks from '../footer-links'
+import ErrorBoundary from '../utils/error-boundary-utils'
 
 const [StylesProvider, useStyles] = createStylesContext('Footer')
 const Footer = ({ ...otherProps }) => {
@@ -77,8 +78,12 @@ const Footer = ({ ...otherProps }) => {
                 <StylesProvider value={styles}>
                     <HideOnMobile>
                         <SimpleGrid columns={4} spacing={3}>
-                            <FooterLinks assetId="footer-links" />
-                            <FooterLinks assetId="footer-links-account" />
+                            <ErrorBoundary>
+                                <FooterLinks assetId="footer-links" />
+                            </ErrorBoundary>
+                            <ErrorBoundary>
+                                <FooterLinks assetId="footer-links-account" />
+                            </ErrorBoundary>
                             <LinksList
                                 heading={intl.formatMessage({
                                     id: 'footer.column.our_company',
