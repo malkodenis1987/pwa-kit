@@ -78,28 +78,7 @@ const Footer = ({ ...otherProps }) => {
                     <HideOnMobile>
                         <SimpleGrid columns={4} spacing={3}>
                             <FooterLinks assetId="footer-links" />
-                            <LinksList
-                                heading={intl.formatMessage({
-                                    id: 'footer.column.account',
-                                    defaultMessage: 'Account'
-                                })}
-                                links={[
-                                    {
-                                        href: '/',
-                                        text: intl.formatMessage({
-                                            id: 'footer.link.order_status',
-                                            defaultMessage: 'Order Status'
-                                        })
-                                    },
-                                    {
-                                        href: '/',
-                                        text: intl.formatMessage({
-                                            id: 'footer.link.signin_create_account',
-                                            defaultMessage: 'Sign in or create account'
-                                        })
-                                    }
-                                ]}
-                            />
+                            <FooterLinks assetId="footer-links-account" />
                             <LinksList
                                 heading={intl.formatMessage({
                                     id: 'footer.column.our_company',
